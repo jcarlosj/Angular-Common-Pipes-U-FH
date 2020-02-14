@@ -110,7 +110,39 @@
         </tbody>
     </table>
 
-
+    <h2>PercentPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">1</th>
+                <td rowspan="3">{{ sells }}</td>
+                <td>percent</td>
+                <td>{{ sells | percent }}</td>
+            </tr>
+            <tr>
+                <td>percent: '2.2-4'</td>
+                <td>{{ sells | percent: '2.2-4' }}</td>
+            </tr>
+            <tr>
+                <td>percent:'2.3-5':'fr'</td>
+                <td>{{ sells | percent:'2.3-5':'fr' }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Transforma un número en una cadena de porcentaje, formateada de acuerdo con las reglas de configuración regional que determinan el tamaño y el separador del grupo, el carácter de punto decimal y otras configuraciones específicas de la configuración regional. </p>
+                    <p>En algunos casos requiere un código de configuración regional para las reglas de formato de configuración regional a utilizar. Cuando no se proporciona, utiliza el valor de LOCALE_ID, que es en-EE. UU. De forma predeterminada. Consulte Configuración de la configuración regional de su aplicación. Opcional. El valor predeterminado es indefinido</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 
 </div>
