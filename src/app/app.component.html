@@ -14,17 +14,17 @@
         <tbody>
             <tr>
                 <th scope="row" rowspan="2">1</th>
-                <td rowspan="2">Entrada</td>
-                <td>PIPE</td>
-                <td>Resultado</td>
+                <td rowspan="2">{{ name }}</td>
+                <td>uppercase</td>
+                <td>{{ name | uppercase }}</td>
             </tr>
             <tr>
-                <td>PIPE</td>
-                <td>Resultado</td>
+                <td>lowercase</td>
+                <td>{{ name | lowercase }}</td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <p><strong>Descripcion: </strong>Detalle de lo que hace el PIPE</p>
+                    <p><strong>Descripcion: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
                 </td>
             </tr>
         </tbody>
