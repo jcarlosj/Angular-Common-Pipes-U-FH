@@ -1,7 +1,7 @@
 <div class="container">
     <h1 class="text-center p-3">Pipes</h1>
 
-    <h2>Mayusculas & Minusculas</h2>
+    <h2>UpperCasePipe & LowerCasePipe</h2>
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -24,7 +24,54 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    <p><strong>Descripcion: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
+                    <p><strong>Descripción: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>SlicePipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">1</th>
+                <td rowspan="2">{{ name }}</td>
+                <td>slice:3</td>
+                <td>{{ name | slice:3 }}</td>
+            </tr>
+            <tr>
+                <td>slice:0:3</td>
+                <td>{{ name | slice:0:3 }}</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="3">2</th>
+                <td rowspan="3">{{ aDigits }}</td>
+                <td>slice:5</td>
+                <td>{{ aDigits | slice:5 }}</td>
+            </tr>
+            <tr>
+                <td>slice:2:6</td>
+                <td>{{ aDigits | slice:2:6 }}</td>
+            </tr>
+            <tr>
+                <td>ngFor & slice:2:5</td>
+                <td>
+                    <ul>
+                        <li *ngFor="let number of aDigits | slice:2:5 ">{{ number }}</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Crea una nueva matriz o cadena que contiene un subconjunto (corte) de los elementos.</p>
                 </td>
             </tr>
         </tbody>
