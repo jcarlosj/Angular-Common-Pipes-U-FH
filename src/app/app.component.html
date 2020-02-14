@@ -77,4 +77,40 @@
         </tbody>
     </table>
 
+    <h2>DecimalPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">1</th>
+                <td rowspan="3">{{ PI }}</td>
+                <td>number</td>
+                <td>{{ PI | number }}</td>
+            </tr>
+            <tr>
+                <td>number:'3.0-0'</td>
+                <td>{{ PI | number:'3.0-0' }}</td>
+            </tr>
+            <tr>
+                <td>number:'1.0-2'</td>
+                <td>{{ PI | number:'1.0-2' }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Transforma un número en una cadena, formateada de acuerdo con las reglas de configuración regional que determinan el tamaño y el separador del grupo, el carácter de punto decimal y otras configuraciones específicas de la configuración regional. El formato que debe usar este pipe es: <i><b>minIntegerDigits</b>.<b>minFractionDigits</b>-<b>maxFractionDigits</b></i>, por ejemplo: number:3.0-0 (Tres decimales, Cero como Minimo de dígitos decimales, Cero como Máximo de dígitos decimales)</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
 </div>
