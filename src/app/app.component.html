@@ -132,8 +132,8 @@
                 <td>{{ sells | percent: '2.2-4' }}</td>
             </tr>
             <tr>
-                <td>percent:'2.3-5':'fr'</td>
-                <td>{{ sells | percent:'2.3-5':'fr' }}</td>
+                <td>percent:'2.3-5'</td>
+                <td>{{ sells | percent:'2.3-5' }}</td>
             </tr>
             <tr>
                 <td colspan="4">
@@ -144,5 +144,48 @@
         </tbody>
     </table>
 
+    <h2>CurrentPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="5">1</th>
+                <td rowspan="5">{{ price }}</td>
+                <td>currency</td>
+                <td>{{ price | currency }}</td>
+            </tr>
+            <tr>
+                <td>currency: 'EUR'</td>
+                <td>{{ price | currency: 'EUR' }}</td>
+            </tr>
+            <tr>
+                <td>currency: 'EUR':false</td>
+                <td>{{ price | currency: 'EUR' : false }}</td>
+            </tr>
+            <tr>
+                <td>currency: 'CAD':'symbol':'4.0-0'</td>
+                <td>{{ price | currency: 'CAD' : 'symbol' : '4.0-0' }}</td>
+            </tr>
+            <tr>
+                <td>currency:'INR':'Indian Rupee'</td>
+                <td>{{ price | currency:'INR':'Indian Rupee' }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>número que se formateará como moneda. Requeriraá algunos parámetros</p>
+                    <p>El código de moneda ISO 4217, como USD para el dólar estadounidense y EUR para el euro. El código de moneda predeterminado se puede configurar utilizando el token de inyección DEFAULT_CURRENCY_CODE. Opcional. El valor predeterminado es indefinido. <a href="https://www.angularjswiki.com/angular/angular-currency-pipe-formatting-currency-in-angular/">Formatos</a></p>
+                    <p>El formato para el indicador de moneda. Uno de los siguientes: code, symbol(default), symbol-narrow, String, Boolean.</p>
+                    <p>Opciones de representación decimal, especificadas por una cadena.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
 </div>
