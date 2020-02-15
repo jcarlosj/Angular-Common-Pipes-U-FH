@@ -188,4 +188,33 @@
         </tbody>
     </table>
 
+    <h2>JsonPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">1</th>
+                <td rowspan="2">{{ hero }}</td>
+                <td>json</td>
+                <td><code>{{ hero | json }}</code></td>
+            </tr>
+            <tr>
+                <td>&lt;pre&gt; & json</td>
+                <td><code><pre>{{ hero | json }}</pre></code></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Convierte un valor en su representación en formato JSON. Útil para la depuración.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>

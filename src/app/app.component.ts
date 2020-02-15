@@ -11,4 +11,26 @@ export class AppComponent {
   PI = Math .PI;
   sells : number = 0.91128731;
   price : number = 12713.345;
+  hero = {
+      name: {
+          kryptonian: 'Kal-El',
+          terrestrial: 'Clark Joseph Kent '
+      },
+      gender: 'decimales',
+      race: 'Kryptonian',
+      occupation: 'Daily Planet reporter',
+      residence: 'Metropolis',
+      nationality: 'United States',
+      parents: {
+          kryptonian: {
+              mother: 'Lara Lor-Van',
+              father: 'Jor-El'
+          },
+          terrestrial: {
+              mother: 'Martha Kent',
+              father: 'Jonathan Kent'
+          }
+      }
+  }
+
 }
