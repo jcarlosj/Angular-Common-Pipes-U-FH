@@ -276,14 +276,22 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="2">1</th>
-                <td rowspan="2">{{ profession }}</td>
+                <th scope="row" rowspan="4">1</th>
+                <td rowspan="4">{{ profession }}</td>
                 <td>capitalizarCadena</td>
                 <td>{{ profession | capitalizarCadena }}</td>
             </tr>
             <tr>
                 <td>capitalizarCadena:false</td>
                 <td>{{ profession | capitalizarCadena:false }}</td>
+            </tr>
+            <tr>
+                <td>capitalizeLastLetter</td>
+                <td>{{ profession | capitalizeLastLetter }}</td>
+            </tr>
+            <tr>
+                <td>capitalizeLastLetter:false</td>
+                <td>{{ profession | capitalizeLastLetter:false }}</td>
             </tr>
             <tr>
                 <td colspan="4">

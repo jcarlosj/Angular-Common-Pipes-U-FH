@@ -8,6 +8,7 @@ registerLocaleData( localeEsCo, 'es-CO');
 
 /** Pipes */
 import { CapitalizePipe } from './pipes/capitalizar.pipe';
+import { CapitalizeLastLetter } from './pipes/capitalize-last-letter.pipe';
 
 /** Components */
 import { AppComponent } from './app.component';
@@ -15,7 +16,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    CapitalizeLastLetter
   ],
   imports: [
     BrowserModule
