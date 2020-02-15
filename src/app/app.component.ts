@@ -11,6 +11,8 @@ export class AppComponent {
   PI = Math .PI;
   sells : number = 0.91128731;
   price : number = 12713.345;
+  birthday : Date = new Date();
+
   hero = {
       name: {
           kryptonian: 'Kal-El',
