@@ -33,4 +33,11 @@ export class AppComponent {
       }
   }
 
+  data = new Promise( ( resolve, reject ) => {
+      setTimeout( () => resolve( 'Data esperada' ), 3500 );
+  });
+  aData = new Promise( ( resolve, reject ) => {
+      setTimeout( () => resolve( [ 'Angular', 'Vue', 'React' ] ), 3500 );
+  });
+
 }

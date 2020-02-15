@@ -217,4 +217,43 @@
         </tbody>
     </table>
 
+    <h2>AsyncPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">1</th>
+                <td rowspan="2">{{ data }}</td>
+                <td>json</td>
+                <td><code>{{ data | json }}</code></td>
+            </tr>
+            <tr>
+                <td>async</td>
+                <td>{{ data | async }}</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">2</th>
+                <td rowspan="2">{{ data }}</td>
+                <td>json</td>
+                <td><code>{{ aData | json }}</code></td>
+            </tr>
+            <tr>
+                <td>async</td>
+                <td>{{ aData | async }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Este pipe se suscribe a un Observable o Promesa y devuelve el último valor que ha emitido. Cuando se emite un nuevo valor, el pipe asíncrono marca el componente que se debe verificar para detectar cambios. Cuando el componente se destruye, el pipe asincrono se da de baja automáticamente para evitar posibles pérdidas de memoria.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
