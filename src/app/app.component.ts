@@ -44,4 +44,6 @@ export class AppComponent {
       setTimeout( () => resolve( [ 'Angular', 'Vue', 'React' ] ), 3500 );
   });
 
+  isHide : boolean = true;
+
 }

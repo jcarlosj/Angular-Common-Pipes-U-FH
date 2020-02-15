@@ -13,13 +13,15 @@ import { CapitalizeLastLetter } from './pipes/capitalize-last-letter.pipe';
 /** Components */
 import { AppComponent } from './app.component';
 import { SafeDomPipe } from './pipes/safe-dom.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePipe,
     CapitalizeLastLetter,
-    SafeDomPipe
+    SafeDomPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule
