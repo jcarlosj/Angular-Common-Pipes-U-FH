@@ -6,11 +6,16 @@ import localeEsCo from '@angular/common/locales/es-CO';
 
 registerLocaleData( localeEsCo, 'es-CO');
 
+/** Pipes */
+import { CapitalizePipe } from './pipes/capitalizar.pipe';
+
+/** Components */
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule
