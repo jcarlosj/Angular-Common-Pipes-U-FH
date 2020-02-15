@@ -12,12 +12,14 @@ import { CapitalizeLastLetter } from './pipes/capitalize-last-letter.pipe';
 
 /** Components */
 import { AppComponent } from './app.component';
+import { SafeDomPipe } from './pipes/safe-dom.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePipe,
-    CapitalizeLastLetter
+    CapitalizeLastLetter,
+    SafeDomPipe
   ],
   imports: [
     BrowserModule

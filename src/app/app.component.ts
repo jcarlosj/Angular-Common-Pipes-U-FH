@@ -13,6 +13,7 @@ export class AppComponent {
   sells : number = 0.91128731;
   price : number = 12713.345;
   birthday : Date = new Date();
+  keyVideo : string = 'Lo4ZMT0MrCI';
 
   hero = {
       name: {

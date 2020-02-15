@@ -295,6 +295,39 @@
             </tr>
             <tr>
                 <td colspan="4">
+                    <p><strong>Descripción: </strong>Podemos crear Pipes personalizados.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Pipes Personalizados DOM Seguro</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <!--th scope="col">Pipe</th>
+                <th scope="col">Salida</th-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">1</th>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/Lo4ZMT0MrCI" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <!--th scope="col">Pipe</th-->
+                <td>keyVideo | safeDom:'https://www.youtube.com/embed/'</td>
+            </tr>
+            <tr>
+                <!--th scope="col">Salida</th-->
+                <td><iframe [src]=" keyVideo | safeDom:'https://www.youtube.com/embed/' " width="560" height="315" frameborder="0" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+                <td colspan="2">
                     <p><strong>Descripción: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
                 </td>
             </tr>
