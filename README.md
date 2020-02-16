@@ -1,5 +1,25 @@
 # Pipes
 
+Ejemplos generales sobre los Pipes más usados en Angular, así como la personalización de los mismos.
+
+ - UppercasePipe
+ - LowercasePipe
+ - SlicePipe
+ - NumberPipe
+ - PercentPipe
+ - CurrencyPipe
+ - JsonPipe
+ - AsyncPipe
+ - DatePipe
+ - Customize Pipe
+
+
+[+] Pipe > Customize: DOM Seguro (Desplegar video YouTube)
+bf49233 [+] Pipe > Customize: Capitalizar ultima o ultima letra de todas las palabras
+e369a60 [+] Pipe > Customize: Capitalizar primera o todas las palabras
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
 ## Development server
