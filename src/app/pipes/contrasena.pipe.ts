@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ContrasenaPipe implements PipeTransform {
 
-  transform( value: any, ...args: any[]): any {
+  transform( value: any, ...args: boolean[]): string {
 
       if( args[ 0 ] ) {
           let asteriskString:string = '';

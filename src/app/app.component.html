@@ -217,7 +217,44 @@
         </tbody>
     </table>
 
-
+    <h2>AsyncPipe</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Salida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">1</th>
+                <td rowspan="2">{{ data }}</td>
+                <td>json</td>
+                <td><code>{{ data | json }}</code></td>
+            </tr>
+            <tr>
+                <td>async</td>
+                <td>{{ data | async }}</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">2</th>
+                <td rowspan="2">{{ aData }}</td>
+                <td>json</td>
+                <td><code>{{ aData | json }}</code></td>
+            </tr>
+            <tr>
+                <td>async</td>
+                <td>{{ aData | async }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p><strong>Descripción: </strong>Este pipe se suscribe a un Observable o Promesa y devuelve el último valor que ha emitido. Cuando se emite un nuevo valor, el pipe asíncrono marca el componente que se debe verificar para detectar cambios. Cuando el componente se destruye, el pipe asincrono se da de baja automáticamente para evitar posibles pérdidas de memoria.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <h2>DatePipe</h2>
     <table class="table">
@@ -313,22 +350,26 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="3">1</th>
+                <th scope="row" rowspan="5">1</th>
                 <td>
                     <iframe src="https://www.youtube.com/embed/Lo4ZMT0MrCI" width="560" height="315" frameborder="0" allowfullscreen></iframe>
                 </td>
             </tr>
             <tr>
-                <!--th scope="col">Pipe</th-->
+                <th scope="col">Pipe</th>
+            </tr>
+            <tr>
                 <td>keyVideo | safeDom:'https://www.youtube.com/embed/'</td>
             </tr>
             <tr>
-                <!--th scope="col">Salida</th-->
+                <th scope="col">Salida</th>
+            </tr>
+            <tr>
                 <td><iframe [src]=" keyVideo | safeDom:'https://www.youtube.com/embed/' " width="560" height="315" frameborder="0" allowfullscreen></iframe></td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <p><strong>Descripción: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
+                    <p><strong>Descripción: </strong>Transforma cadenas que pueden representar recursos externos Urls (Archivos, Videos, Imágenes, etc) para que se desplieguen en forma segura</p>
                 </td>
             </tr>
         </tbody>
@@ -346,22 +387,22 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="2">1</th>
-                <td rowspan="2">{{ name }}</td>
+                <th scope="row">1</th>
+                <td>{{ name }}</td>
                 <td>contrasena:{{ isHide }}</td>
                 <td>
                     <p>{{ name | contrasena:isHide }}</p>
                     <button
                         (click)="isHide = ! isHide"
                         type="button"
-                        class="btn btn-btn-outline-primary"
+                        class="btn btn-primary"
                     >{{ isHide ? 'mostrar' : 'ocultar' }}
                     </button>
                 </td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <p><strong>Descripción: </strong>Transforma una cadena de texto a mayusculas y/o minusculas</p>
+                    <p><strong>Descripción: </strong>Transforma una cadena para ocultarla tras la ejecución de un evento usando un Pipe</p>
                 </td>
             </tr>
         </tbody>
